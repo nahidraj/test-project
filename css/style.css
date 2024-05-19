@@ -247,6 +247,7 @@ body {
   max-height: 526px;
   border-radius: 50%;
   position: relative;
+  margin-bottom: -40px;
 }
 .banner_area .banner_info .image img {
   height: 100%;
