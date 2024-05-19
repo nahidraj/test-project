@@ -1,0 +1,114 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 26px;
+  color: $paragraph;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  @include font(16px, 400);
+  color: $black;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background-color: $primary;
+  color: $black;
+}
+
+// common btn
+.cmn_btn{
+  font-size: 20px;
+  font-weight: 700;
+  color: $black;
+  line-height: 18px;
+  border-radius: 50px;
+  background-color: $white;
+  padding: 18px 47px;
+  transition: $transition;
+  &:hover{
+    transform: translateY(-8px);
+    color: $primary;
+  }
+  svg{
+    margin-left: 8px
+  }
+}
+
+// line limit start
+.line-limit-1 {
+  @include line_limit (1 !important);
+}
+
+.line-limit-2 {
+  @include line_limit (2 !important);
+}
+
+.line-limit-3 {
+  @include line_limit (3 !important);
+}
+
+.line-limit-4 {
+  @include line_limit (4 !important);
+}
+
+.line-limit-6 {
+  @include line_limit (6 !important);
+}
+
+.line-limit-7 {
+  @include line_limit (7 !important);
+}
+
+.line-limit-8 {
+  @include line_limit (8 !important);
+}
+
+.line-limit-9 {
+  @include line_limit (9 !important);
+}
+
+.line-limit-10 {
+  @include line_limit (10 !important);
+}
