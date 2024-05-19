@@ -2,13 +2,9 @@ $(function () {
   "use strict";
 
   // // Animation on scroll
-  // $(window).on("load", function () {
-  //   setTimeout(() => {
-  //     AOS.init({
-  //       once: false,
-  //     });
-  //   }, 0);
-  // });
+  AOS.init({
+    once: false,
+  });
 
   // // counter up js
   // $('.counter').counterUp({
@@ -48,5 +44,4 @@ $(function () {
       { accY: 0 }
     );
   }
-
 });
